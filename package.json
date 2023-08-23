@@ -1,0 +1,30 @@
+{
+  "name": "@frugalwizard/random-typescript-utils",
+  "version": "0.1.0",
+  "description": "This is compilation of random utilities that only make sense in typescript projects",
+  "license": "MIT",
+  "author": "Frugal-Wizard",
+  "repository": "https://github.com/Frugal-Wizard/random-typescript-utils.git",
+  "main": "dist/index.js",
+  "scripts": {
+    "clean": "rimraf dist",
+    "compile": "tsc -p src",
+    "build": "run-s clean compile",
+    "prepare": "npm run build",
+    "lint": "eslint . --ext .ts",
+    "typecheck": "tsc",
+    "test": "mocha"
+  },
+  "devDependencies": {
+    "@types/mocha": "^10.0.1",
+    "@types/node": "^20.5.3",
+    "@typescript-eslint/eslint-plugin": "^6.4.1",
+    "@typescript-eslint/parser": "^6.4.1",
+    "eslint": "^8.47.0",
+    "mocha": "^10.2.0",
+    "npm-run-all": "^4.1.5",
+    "rimraf": "^5.0.1",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.1.6"
+  }
+}
